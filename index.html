@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallora — 4K & Live Wallpapers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#"><span class="brand-mark">W</span> wallora</a>
+    <nav><a class="active" href="#discover">Discover</a><a href="#categories">Categories</a><a href="#live">Live wallpapers</a></nav>
+    <div class="nav-actions"><button class="icon-btn" aria-label="Search">⌕</button><button class="sign-in">Sign in</button></div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="discover">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> FRESH IN ULTRA HD</p>
+        <h1>Your screen,<br><em>made cinematic.</em></h1>
+        <p class="lede">A hand-picked library of breathtaking 4K, OLED, and live wallpapers — ready for every device.</p>
+        <div class="hero-actions"><a class="button primary" href="#gallery">Explore wallpapers <b>→</b></a><button class="button ghost" id="previewBtn"><i>▶</i> See it in motion</button></div>
+        <div class="stats"><div><strong>48K<span>+</span></strong><small>wallpapers</small></div><div><strong>1.2K<span>+</span></strong><small>live loops</small></div><div><strong>4.9<span>/5</span></strong><small>community love</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Featured wallpaper preview">
+        <div class="art-glow"></div><div class="planet planet-a"></div><div class="planet planet-b"></div><div class="stars"></div>
+        <div class="feature-tag"><span class="play">▶</span><div><b>Celestial Drift</b><small>LIVE · 4K · 60 FPS</small></div><button id="heroDownload">⇩</button></div>
+        <div class="resolution">3840 × 2160</div>
+      </div>
+    </section>
+
+    <section class="ticker"><div>4K RESOLUTION <b>✦</b> OLED READY <b>✦</b> ZERO WATERMARKS <b>✦</b> LIVE MOTION <b>✦</b> 4K RESOLUTION <b>✦</b> OLED READY <b>✦</b> ZERO WATERMARKS <b>✦</b></div></section>
+
+    <section class="gallery-section wrap" id="gallery">
+      <div class="section-top"><div><p class="eyebrow"><span></span> CURATED FOR YOU</p><h2>Trending now</h2></div><a class="see-all" href="#categories">View all <b>→</b></a></div>
+      <div class="filters" role="tablist"><button class="selected">All</button><button>Abstract</button><button>Nature</button><button>Space</button><button>Anime</button><button>Minimal</button></div>
+      <div class="wall-grid">
+        <article class="wall large space"><div class="pill live-pill">● LIVE</div><div class="wall-info"><div><h3>Afterlight</h3><p>Space · 4K</p></div><button class="download" data-title="Afterlight">⇩</button></div></article>
+        <article class="wall aurora"><div class="wall-info"><div><h3>Arctic Pulse</h3><p>Nature · 4K</p></div><button class="download" data-title="Arctic Pulse">⇩</button></div></article>
+        <article class="wall neon"><div class="pill live-pill">● LIVE</div><div class="wall-info"><div><h3>Tokyo Afterhours</h3><p>City · 4K</p></div><button class="download" data-title="Tokyo Afterhours">⇩</button></div></article>
+        <article class="wall dune"><div class="wall-info"><div><h3>Soft Terrain</h3><p>Abstract · 4K</p></div><button class="download" data-title="Soft Terrain">⇩</button></div></article>
+        <article class="wall glass"><div class="pill live-pill">● LIVE</div><div class="wall-info"><div><h3>Liquid Glass</h3><p>Abstract · 4K</p></div><button class="download" data-title="Liquid Glass">⇩</button></div></article>
+      </div>
+    </section>
+
+    <section class="live-card wrap" id="live"><div class="live-copy"><p class="eyebrow"><span></span> MOVEMENT, MADE BEAUTIFUL</p><h2>Bring your desktop<br>to <em>life.</em></h2><p>Subtle loops. Rich detail. Zero distraction. Download dynamic scenes engineered to look incredible without draining your battery.</p><a href="#gallery" class="button primary">Browse live collection <b>→</b></a></div><div class="live-visual"><div class="ring r1"></div><div class="ring r2"></div><div class="core"></div><span>01:24</span><small>PLAYING NOW</small></div></section>
+
+    <section class="categories wrap" id="categories"><p class="eyebrow"><span></span> FIND YOUR MOOD</p><div class="section-top"><h2>Explore by vibe</h2><a class="see-all" href="#gallery">Explore all <b>→</b></a></div><div class="category-list"><a href="#gallery"><b>01</b><span>Dreamscape</span><i>↗</i></a><a href="#gallery"><b>02</b><span>Neo Tokyo</span><i>↗</i></a><a href="#gallery"><b>03</b><span>Cosmos</span><i>↗</i></a><a href="#gallery"><b>04</b><span>Quiet Nature</span><i>↗</i></a></div></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#"><span class="brand-mark">W</span> wallora</a><p>Made for screens worth staring at.</p><span>© 2026 WALLORA</span></footer>
+  <div class="toast" id="toast">Wallpaper download started <b>×</b></div>
+  <script src="script.js"></script>
+</body>
+</html>
